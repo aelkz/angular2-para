@@ -8,8 +8,19 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- inject:css -->
-  <link rel="stylesheet" href="/angular2-para/css/main.css?1465555557289">
+  <link rel="stylesheet" href="/angular2-para/css/main.css?1465581324694">
   <!-- endinject -->
+  <script>
+    // Quick fix for GitHub:
+    // http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -47,8 +58,8 @@
   <!-- endinject -->
 
   <!-- inject:js -->
-  <script src="/angular2-para/js/shims.js?1465555557286"></script>
-  <script src="/angular2-para/js/app.js?1465555557287"></script>
+  <script src="/angular2-para/js/shims.js?1465581324692"></script>
+  <script src="/angular2-para/js/app.js?1465581324693"></script>
   <!-- endinject -->
 
   
